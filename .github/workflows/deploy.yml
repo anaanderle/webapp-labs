@@ -75,12 +75,12 @@ jobs:
             export COMPOSE_DOCKER_CLI_BUILD=0
           tags: anaanderle/javacrescer:latest
 
-deploy:
-  name: Publica App ACI
-  needs: push-image
-  runs-on: ubuntu-latest
+  deploy:
+    name: Publica App ACI
+    needs: push-image
+    runs-on: ubuntu-latest
 
-  steps:
+    steps:
     - name: Login via Azure CLI
       uses: azure/login@v1
       with:
