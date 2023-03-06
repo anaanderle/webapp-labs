@@ -95,7 +95,7 @@ jobs:
         cpu: 1
         memory: 1
         registry-login-server: docker.io
-        registry-username: ${{ secrests.REGISTRY_USERNAME }}
-        registry-password: ${{ secrests.REGISTRY_PASSWORD }}
+        registry-username: ${{ secrets.REGISTRY_USERNAME }}
+        registry-password: ${{ secrets.REGISTRY_PASSWORD }}
         name: lab-crescer-ana-anderle
         location: "east us"
